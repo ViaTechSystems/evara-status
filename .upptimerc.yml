@@ -13,6 +13,7 @@ status-website:
   logoUrl: https://evara.build/platform_ui/logos/evara-logo.svg
   introTitle: "**Evara Studio** real-time service status."
   introMessage: This page reflects the live health of evara.build. Data is collected every 5 minutes via automated probes.
+  theme: dark
   navbar:
     - title: Status
       href: /
