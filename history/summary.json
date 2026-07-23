@@ -6,15 +6,15 @@
     "slug": "evara-app",
     "status": "up",
     "uptime": "99.98%",
-    "uptimeDay": "98.11%",
+    "uptimeDay": "100.00%",
     "uptimeWeek": "99.73%",
     "uptimeMonth": "99.94%",
     "uptimeYear": "99.98%",
-    "time": 239,
-    "timeDay": 174,
-    "timeWeek": 289,
-    "timeMonth": 252,
-    "timeYear": 239,
+    "time": 240,
+    "timeDay": 324,
+    "timeWeek": 295,
+    "timeMonth": 255,
+    "timeYear": 240,
     "dailyMinutesDown": {
       "2026-07-21": 27
     }
