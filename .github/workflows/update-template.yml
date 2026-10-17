@@ -15,9 +15,13 @@
 
 
 name: Update Template CI
+# LOCAL EDIT (2026-10-17): the daily schedule is removed. This repo has no GH_PAT
+# secret, and the default token cannot write .github/workflows, so every nightly
+# run failed ("refusing to allow a GitHub App to create or update workflow
+# `.github/workflows/graphs.yml` without `workflows` permission") and mailed a
+# failure for nothing anyone can act on. Run it by hand if the template is ever
+# wanted; it would also restore SECRETS_CONTEXT: toJson(secrets) below.
 on:
-  schedule:
-    - cron: "0 0 * * *"
   repository_dispatch:
     types: [update_template]
   workflow_dispatch:

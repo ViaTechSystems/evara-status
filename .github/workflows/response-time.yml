@@ -14,6 +14,12 @@
 # * More by Anand Chowdhary: https://anandchowdhary.com
 
 
+# LOCAL EDIT (2026-10-17): `SECRETS_CONTEXT: ${{ toJson(secrets) }}` is removed.
+# A workflow that serialises EVERY secret now ends `action_required` with no job
+# run (GitHub's hardening; upstream upptime #312 renders named secrets instead).
+# 188 of 188 Uptime CI runs 2026-10-15..17 ended that way, 902 failure mails in
+# 7 days. .upptimerc.yml uses no secrets, and uptime-monitor's getSecret() falls
+# back to process.env, so nothing is lost. Do not let update-template restore it.
 name: Response Time CI
 on:
   schedule:
@@ -40,4 +46,3 @@ jobs:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
-          SECRETS_CONTEXT: ${{ toJson(secrets) }}
