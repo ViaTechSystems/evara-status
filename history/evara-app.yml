@@ -1,7 +1,7 @@
 url: https://evara.build/api/health
-status: down
-code: 521
-responseTime: 263
-lastUpdated: 2026-10-29T01:07:48.182Z
+status: up
+code: 200
+responseTime: 233
+lastUpdated: 2026-10-29T01:19:01.688Z
 startTime: 2026-05-07T07:57:38.229Z
 generator: Upptime <https://github.com/upptime/upptime>
